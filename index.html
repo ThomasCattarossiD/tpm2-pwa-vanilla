@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Courses PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 Ma Liste</h1>
+        <div id="network-status" class="online">En ligne</div>
+    </header>
+
+    <main>
+        <section class="add-item">
+            <input type="text" id="item-input" placeholder="Pommes, Lait..." aria-label="Nom de l'article">
+            <select id="category-select" aria-label="Catégorie">
+                <option value="Fruits 🍎">Fruits</option>
+                <option value="Légumes 🥦">Légumes</option>
+                <option value="Frais 🧀">Frais</option>
+                <option value="Divers 🧴">Divers</option>
+            </select>
+            <button id="add-btn">Ajouter</button>
+        </section>
+
+        <div id="list-container"></div>
+    </main>
+
+    <div class="fab-container">
+        <button id="share-btn" aria-label="Partager la liste">🔗 Partager</button>
+        <button id="install-btn" style="display:none;">⬇ Installer</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
