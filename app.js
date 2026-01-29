@@ -87,7 +87,7 @@ const renderList = (items) => {
             const div = document.createElement('div');
             div.className = `item ${item.done ? 'done' : ''}`;
             div.innerHTML = `
-                <label style="display:flex; align-items:center; flex-grow:1">
+                <label style="display:flex; align-items:center;">
                     <input type="checkbox" ${item.done ? 'checked' : ''} onchange="toggleItem(${item.id}, this.checked)">
                     <span style="margin-left:10px">${item.name}</span>
                 </label>
